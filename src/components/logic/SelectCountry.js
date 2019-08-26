@@ -10,17 +10,16 @@ export default class SelectCountry extends Component {
     }
 
     async componentDidMount() {
-        const url = "http://ip-api.com/json";
+        const url = "https://ipapi.co/json";
         const response = await fetch(url);
         const data = await response.json();
-        console.log(data.status)
 
-        if (data.status !== "success") {
+        if (!data) {
 
             this.setState({ value: "US", foundIP: true });           
         }
 
-        this.setState({ value: data.countryCode, foundIP: true });
+        this.setState({ value: data.country, foundIP: true });
     }
 
     handleChange(event) {
