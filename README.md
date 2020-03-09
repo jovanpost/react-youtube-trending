@@ -4,4 +4,4 @@ The website is responsive and it's developed with React, using [Create React App
 
 It uses the [ipapi API](https://ipapi.co) to find the user's country, and then it's fetching the videos from the [YouTube Data API](https://developers.google.com/youtube/v3).
 
-The website is live at - https://youtubeworldwidetrending.netlify.com/
+The website is live at - https://worldwidetrendingvideos.netlify.com/
